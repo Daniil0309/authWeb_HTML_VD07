@@ -5,6 +5,7 @@ from app import db, app, bcrypt
 from app.forms import RegistrationForm, LoginForm
 
 @app.route('/')
+@app.route('/home')
 def home():
     return render_template('home.html')
 

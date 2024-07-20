@@ -13,4 +13,4 @@ class User(db.Model, UserMixin):
 
 
     def __repr__(self): # Функция, чтобы представить информацию о пользователе в виде одной строки
-        return f'User: {self.username}, email: {self.emai}'
+        return f"User('{self.username}', '{self.email}')"
